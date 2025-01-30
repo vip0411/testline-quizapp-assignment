@@ -16,11 +16,11 @@ class _StartScreenState extends State<StartScreen> {
   Future<void> _startQuiz() async {
     setState(() {
       _isLoading = true;
-      _error = '';  // Clear any previous errors
+      _error = ''; 
     });
     try {
       final quiz = await QuizService().fetchQuiz();
-      if (!mounted) return;  // Check if widget is still mounted
+      if (!mounted) return;
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
