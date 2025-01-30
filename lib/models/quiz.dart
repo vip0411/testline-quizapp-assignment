@@ -1,4 +1,3 @@
-// lib/models/quiz.dart
 class Quiz {
   final String title;
   final String topic;
